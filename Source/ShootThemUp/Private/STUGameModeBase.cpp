@@ -121,6 +121,7 @@ void ASTUGameModeBase::CrateTeamsInfo()
 
         PlayerState->SetTeamID(TeamID);
         PlayerState->SetTeamColor(DetermineColorByTeamID(TeamID));
+        PlayerState->SetPlayerName(Controller->IsPlayerController() ? "Player" : "Bot");
         SetPlayerColor(Controller);
 
         TeamID = TeamID == 1 ? 2 : 1;
