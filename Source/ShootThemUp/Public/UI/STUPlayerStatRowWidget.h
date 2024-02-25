@@ -20,21 +20,25 @@ public:
       void SetDeaths(const FText& Text);
       void SetTeam(const FText& Text);
       void SetPlayerIndicatorVisibility(bool Visible);
+      void SetTeamColor(const FLinearColor& Color);
 
   protected:
       UPROPERTY(meta = (BindWidget))
-      UTextBlock* PlayerNameTextBlock;
+      UTextBlock* PlayerNameTextBlock_1;
 
       UPROPERTY(meta = (BindWidget))
-      UTextBlock* KillsTextBlock;
+      UTextBlock* KillsTextBlock_1;
 
       UPROPERTY(meta = (BindWidget))
-      UTextBlock* DeathsTextBlock;
+      UTextBlock* DeathsTextBlock_1;
 
       UPROPERTY(meta = (BindWidget))
-      UTextBlock* TeamTextBlock;
+      UTextBlock* TeamTextBlock_1;
 
       UPROPERTY(meta = (BindWidget))
-      UImage* PlayerIndicatorImage;
+      UImage* PlayerIndicatorImage_1;
+
+      UPROPERTY(meta = (BindWidget))
+      UImage* TeamImage_1;
 
 };

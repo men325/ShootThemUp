@@ -15,7 +15,7 @@ class SHOOTTHEMUP_API USTUGoToMenuWidget : public UUserWidget
 	
 protected:
       UPROPERTY(meta = (BindWidget))
-      UButton* GoToMenuButton;
+    UButton* GoToMenuButton_1;
 
       virtual void NativeOnInitialized() override;
 

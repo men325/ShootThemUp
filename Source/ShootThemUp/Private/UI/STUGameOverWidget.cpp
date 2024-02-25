@@ -1,4 +1,4 @@
-// Shoot Them Up Game, All Rights Reserved
+    // Shoot Them Up Game, All Rights Reserved
 
 #include "UI/STUGameOverWidget.h"
 #include "STUGameModeBase.h"
@@ -21,9 +21,9 @@ void USTUGameOverWidget::NativeOnInitialized()
             GameMode->OnMatchStateChanged.AddUObject(this, &USTUGameOverWidget::OnMatchStateChanged);
         }
     }
-    if (ResetLeveLButton)
+    if (ResetLevelButton_1)
     {
-        ResetLeveLButton->OnClicked.AddDynamic(this, &USTUGameOverWidget::OnResetLevel);
+        ResetLevelButton_1->OnClicked.AddDynamic(this, &USTUGameOverWidget::OnResetLevel);
     }
 }
 
@@ -61,6 +61,7 @@ void USTUGameOverWidget::UpdatePlayersStat()
         PlayerStatRowWidget->SetDeaths(STUUtils::TextFromInt(PlayerState->GetDeathsNum()));
         PlayerStatRowWidget->SetTeam(STUUtils::TextFromInt(PlayerState->GetTeamID()));
         PlayerStatRowWidget->SetPlayerIndicatorVisibility(Controller->IsPlayerController());
+        PlayerStatRowWidget->SetTeamColor(PlayerState->GetTeamColor());
 
         PlayerStatBox->AddChild(PlayerStatRowWidget);
     }

@@ -11,9 +11,9 @@ void USTUPauseWidget::NativeOnInitialized()
     Super::NativeOnInitialized();
     const auto InitStatus = Super::Initialize();
 
-    if (ClearPauseButton)
+    if (ClearPauseButton_1)
     {
-        ClearPauseButton->OnClicked.AddDynamic(this, &USTUPauseWidget::OnClearPause);
+        ClearPauseButton_1->OnClicked.AddDynamic(this, &USTUPauseWidget::OnClearPause);
     }
 
 }

@@ -16,7 +16,7 @@ class SHOOTTHEMUP_API USTUPauseWidget : public UUserWidget
 
 protected:
     UPROPERTY(meta = (BindWidget))
-    UButton* ClearPauseButton;
+    UButton* ClearPauseButton_1;
 
     virtual void NativeOnInitialized() override;
 
