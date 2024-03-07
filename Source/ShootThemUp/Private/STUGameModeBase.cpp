@@ -66,7 +66,7 @@ void ASTUGameModeBase::StartRound()
 
 void ASTUGameModeBase::GameTimerUpdate() 
 {
-    UE_LOG(LogSTUGameModeBase, Display, TEXT("Time: %i / Round: %i/%i"), RoundCountDown, CurrentRound, GameData.RoundsNum);
+    //UE_LOG(LogSTUGameModeBase, Display, TEXT("Time: %i / Round: %i/%i"), RoundCountDown, CurrentRound, GameData.RoundsNum);
 
     if (--RoundCountDown == 0)
     {
