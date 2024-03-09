@@ -25,8 +25,7 @@ public:
 
       virtual void StartFire();
       virtual void StopFire();
-      bool IsAmmoEmpty() const;
-      bool IsAmmoFull() const;
+
       void ChangeClip();
       bool CanReload() const;
 
@@ -41,6 +40,10 @@ public:
       }
 
       bool TryToAddAmmo(int32 ClipsAmount);
+      bool IsAmmoEmpty() const;
+      bool IsAmmoFull() const;
+
+      virtual void Zoom(bool Enabled) {} 
 
   protected:
       
