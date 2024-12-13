@@ -42,6 +42,4 @@ This is TPS(Third Person Shooter) which uses an advanced implementation of game 
 - **UMG** for creating interactive UI elements.
 - **C++** for high-performance game logic.
 
----
 
-## 📂 Project Structure
